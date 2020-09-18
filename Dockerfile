@@ -1,2 +1,3 @@
-FROM nginx:alpine
-COPY source /usr/share/nginx/html
+ARG ARCH=
+FROM ${ARCH}nginx:alpine
+COPY src /usr/share/nginx/html

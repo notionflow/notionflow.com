@@ -3,5 +3,6 @@ version: '3'
 services:
   website:
     build: .
+    container_name: buildshiprun_website
     ports:
-      - "3000:80"
+      - "8080:80"
